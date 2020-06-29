@@ -4,6 +4,8 @@ object-assign
 @license MIT
 */
 
+/*! algoliasearch.umd.js | 4.3.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
