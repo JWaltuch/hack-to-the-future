@@ -68,3 +68,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+NOTE:
+
+The Algolia trial period is 14 days, after which all your hard work will stop working. Fixing this is pretty easy, you have to switch over to the Community plan, which is absolutely free. You just have to switch to it in your settings -- so, make sure you do that :-)

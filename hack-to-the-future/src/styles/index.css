@@ -6,6 +6,9 @@
 .grid {
   display: flex;
   flex-direction: column;
+  border: 3px solid cornflowerblue;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .row {
@@ -15,4 +18,13 @@
 
 .item {
   width: 33%;
+}
+
+.header {
+  background-color: cornflowerblue;
+  padding: 10px;
+}
+
+.top {
+  background-color: cornflowerblue;
 }

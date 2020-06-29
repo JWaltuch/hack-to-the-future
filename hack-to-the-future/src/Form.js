@@ -10,7 +10,9 @@ export const Form = props => {
         event.preventDefault();
       }}
     >
-      <label htmlFor="search">Search For An Emoji: </label>
+      <label htmlFor="search">
+        <big>Search For An Emoji: </big>
+      </label>
       <input name="search" type="text" />
     </form>
   );

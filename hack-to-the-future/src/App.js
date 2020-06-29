@@ -56,7 +56,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Let's Learn About Some Emojis Today! 🙂</h1>
+        <h1 className="header">Let's Learn About Some Emojis Today! 🙂</h1>
         <Form handleChange={this.handleChange} />
         <Emoji emojis={this.state.emojis} />
       </div>
