@@ -1,25 +1,46 @@
-import React from 'react';
-import logo from './mintbean.png';
+import React, { Component } from 'react';
+import { Form } from './Form';
 import './styles/index.css';
+import { algoliaKey, searchKey } from './secrets.js';
 
-function App() {
-  return (
-    <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        <code>App.js</code> is the entrypoint to your app. TEST
-      </p>
-      <h2>HAPPY HACKING!</h2>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </div>
-  );
+import algoliasearch from 'algoliasearch';
+
+const client = algoliasearch(algoliaKey, searchKey);
+
+const index = client.initIndex('emojis');
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  componentDidMount() {
+    fetch('https://alg.li/emojis.json')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(products) {
+        return index.saveObjects(products, {
+          autoGenerateObjectIDIfNotExist: true,
+        });
+      });
+  }
+
+  handleChange(event) {
+    event.preventDefault();
+    index.search(event.target.value).then(({ hits }) => {
+      console.log(hits);
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Form handleChange={this.handleChange} />
+      </div>
+    );
+  }
 }
 
 export default App;
