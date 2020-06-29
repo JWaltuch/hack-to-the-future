@@ -57,6 +57,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="header">Let's Learn About Some Emojis Today! 🙂</h1>
+        <p>
+          Emoji refers to small pictures used on smartphones, tablets, and other
+          electronic devices to convey emotion or represent an object or symbol
+          more succinctly than a text statement. Emoji are an evolution of the
+          text-based, picture-like emoticons that users created and included in
+          e-mails and early text messages.
+        </p>
         <Form handleChange={this.handleChange} />
         <Emoji emojis={this.state.emojis} />
       </div>
