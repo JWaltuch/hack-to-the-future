@@ -32,9 +32,9 @@ class App extends Component {
   handleChange(event) {
     event.preventDefault();
     index.search(event.target.value).then(({ hits }) => {
+      let newState = [];
       Object.values(hits).forEach(hit => {
         console.log(hit);
-        let newState = [...this.state.emojis];
         newState.push({
           name: hit.name,
           descrip: hit.definition
@@ -48,8 +48,8 @@ class App extends Component {
           //   .join('&#x200D;'),
           unicode: hit.unicode,
         });
-        this.setState({ emojis: newState });
       });
+      this.setState({ emojis: newState });
     });
   }
 
