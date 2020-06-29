@@ -31,26 +31,30 @@ class App extends Component {
 
   handleChange(event) {
     event.preventDefault();
-    index.search(event.target.value).then(({ hits }) => {
-      let newState = [];
-      Object.values(hits).forEach(hit => {
-        console.log(hit);
-        newState.push({
-          name: hit.name,
-          descrip: hit.definition
-            .split(' ')
-            .map(x => x.replace('??', ''))
-            .map(x => x.replace('?', ''))
-            .join(' '),
-          // unicode: hit.unicode
-          //   .split(' ')
-          //   .map(x => x.replace('U+', '&#') + ';')
-          //   .join('&#x200D;'),
-          unicode: hit.unicode,
+    if (event.target.value !== '') {
+      index.search(event.target.value).then(({ hits }) => {
+        let newState = [];
+        Object.values(hits).forEach(hit => {
+          console.log(hit);
+          newState.push({
+            name: hit.name,
+            descrip: hit.definition
+              .split(' ')
+              .map(x => x.replace('??', ''))
+              .map(x => x.replace('?', ''))
+              .join(' '),
+            // unicode: hit.unicode
+            //   .split(' ')
+            //   .map(x => x.replace('U+', '&#') + ';')
+            //   .join('&#x200D;'),
+            unicode: hit.unicode,
+          });
         });
+        this.setState({ emojis: newState });
       });
-      this.setState({ emojis: newState });
-    });
+    } else {
+      this.setState({ emojis: [] });
+    }
   }
 
   render() {
