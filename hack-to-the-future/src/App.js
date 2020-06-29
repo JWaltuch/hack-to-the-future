@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form } from './Form';
+import { Emoji } from './Emoji';
 import './styles/index.css';
 import { algoliaKey, searchKey } from './secrets.js';
 
@@ -51,17 +52,7 @@ class App extends Component {
     return (
       <div className="App">
         <Form handleChange={this.handleChange} />
-        {this.state.emojis ? (
-          this.state.emojis.map(emoji => (
-            <div class="row" key={emoji.unicode}>
-              <h4>{emoji.name}</h4>
-              <h5>{emoji.descrip}</h5>
-              <p>{emoji.unicode}</p>
-            </div>
-          ))
-        ) : (
-          <div>Search for some emojis!</div>
-        )}
+        <Emoji emojis={this.state.emojis} />
       </div>
     );
   }
