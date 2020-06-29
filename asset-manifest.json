@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hack-to-the-future/static/css/main.75df9f48.chunk.css",
+    "main.js": "/hack-to-the-future/static/js/main.735832fe.chunk.js",
+    "main.js.map": "/hack-to-the-future/static/js/main.735832fe.chunk.js.map",
+    "runtime-main.js": "/hack-to-the-future/static/js/runtime-main.da915afd.js",
+    "runtime-main.js.map": "/hack-to-the-future/static/js/runtime-main.da915afd.js.map",
+    "static/js/2.059c524f.chunk.js": "/hack-to-the-future/static/js/2.059c524f.chunk.js",
+    "static/js/2.059c524f.chunk.js.map": "/hack-to-the-future/static/js/2.059c524f.chunk.js.map",
+    "index.html": "/hack-to-the-future/index.html",
+    "precache-manifest.79d5d9af17da23cba782b3cd165aaed0.js": "/hack-to-the-future/precache-manifest.79d5d9af17da23cba782b3cd165aaed0.js",
+    "service-worker.js": "/hack-to-the-future/service-worker.js",
+    "static/css/main.75df9f48.chunk.css.map": "/hack-to-the-future/static/css/main.75df9f48.chunk.css.map",
+    "static/js/2.059c524f.chunk.js.LICENSE.txt": "/hack-to-the-future/static/js/2.059c524f.chunk.js.LICENSE.txt",
+    "static/media/mintbean.png": "/hack-to-the-future/static/media/mintbean.cf18b629.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da915afd.js",
+    "static/js/2.059c524f.chunk.js",
+    "static/css/main.75df9f48.chunk.css",
+    "static/js/main.735832fe.chunk.js"
+  ]
+}
