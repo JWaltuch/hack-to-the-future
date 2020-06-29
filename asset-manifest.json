@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hack-to-the-future/static/css/main.2cb6e37b.chunk.css",
-    "main.js": "/hack-to-the-future/static/js/main.8d11ed3d.chunk.js",
-    "main.js.map": "/hack-to-the-future/static/js/main.8d11ed3d.chunk.js.map",
+    "main.js": "/hack-to-the-future/static/js/main.c1d1d924.chunk.js",
+    "main.js.map": "/hack-to-the-future/static/js/main.c1d1d924.chunk.js.map",
     "runtime-main.js": "/hack-to-the-future/static/js/runtime-main.ee9d2e51.js",
     "runtime-main.js.map": "/hack-to-the-future/static/js/runtime-main.ee9d2e51.js.map",
     "static/js/2.8fba01a7.chunk.js": "/hack-to-the-future/static/js/2.8fba01a7.chunk.js",
     "static/js/2.8fba01a7.chunk.js.map": "/hack-to-the-future/static/js/2.8fba01a7.chunk.js.map",
     "index.html": "/hack-to-the-future/index.html",
-    "precache-manifest.2edb090c9e36388169a9bfeed8c2b7a4.js": "/hack-to-the-future/precache-manifest.2edb090c9e36388169a9bfeed8c2b7a4.js",
+    "precache-manifest.3b6e83c65dcd991837fd6441d70c0b08.js": "/hack-to-the-future/precache-manifest.3b6e83c65dcd991837fd6441d70c0b08.js",
     "service-worker.js": "/hack-to-the-future/service-worker.js",
     "static/css/main.2cb6e37b.chunk.css.map": "/hack-to-the-future/static/css/main.2cb6e37b.chunk.css.map",
     "static/js/2.8fba01a7.chunk.js.LICENSE.txt": "/hack-to-the-future/static/js/2.8fba01a7.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ee9d2e51.js",
     "static/js/2.8fba01a7.chunk.js",
     "static/css/main.2cb6e37b.chunk.css",
-    "static/js/main.8d11ed3d.chunk.js"
+    "static/js/main.c1d1d924.chunk.js"
   ]
 }
