@@ -12,6 +12,7 @@ const index = client.initIndex('emojis');
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = { emojis: [] };
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -30,7 +31,19 @@ class App extends Component {
   handleChange(event) {
     event.preventDefault();
     index.search(event.target.value).then(({ hits }) => {
-      console.log(hits);
+      Object.values(hits).forEach(hit => {
+        console.log(hit);
+        let newState = [...this.state.emojis];
+        newState.push({
+          name: hit.name,
+          descrip: hit.definition,
+          unicode: hit.unicode
+            .split(' ')
+            .map(x => x.replace('U+', '&#') + ';')
+            .join('&#x200D;'),
+        });
+        this.setState({ emojis: newState });
+      });
     });
   }
 
@@ -38,6 +51,17 @@ class App extends Component {
     return (
       <div className="App">
         <Form handleChange={this.handleChange} />
+        {this.state.emojis ? (
+          this.state.emojis.map(emoji => (
+            <div class="row" key={emoji.unicode}>
+              <h4>{emoji.name}</h4>
+              <h5>{emoji.descrip}</h5>
+              <p>{emoji.unicode}</p>
+            </div>
+          ))
+        ) : (
+          <div>Search for some emojis!</div>
+        )}
       </div>
     );
   }

@@ -7,7 +7,7 @@ export const Form = props => {
         props.handleChange(event);
       }}
     >
-      <label htmlFor="search">Search For An Emoji</label>
+      <label htmlFor="search">Search For An Emoji: </label>
       <input name="search" type="text" />
     </form>
   );
