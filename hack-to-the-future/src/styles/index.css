@@ -3,3 +3,17 @@
   text-align: center;
   margin: 6rem 0;
 }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  width: 33%;
+}

@@ -37,11 +37,16 @@ class App extends Component {
         let newState = [...this.state.emojis];
         newState.push({
           name: hit.name,
-          descrip: hit.definition,
-          unicode: hit.unicode
+          descrip: hit.definition
             .split(' ')
-            .map(x => x.replace('U+', '&#') + ';')
-            .join('&#x200D;'),
+            .map(x => x.replace('??', ''))
+            .map(x => x.replace('?', ''))
+            .join(' '),
+          // unicode: hit.unicode
+          //   .split(' ')
+          //   .map(x => x.replace('U+', '&#') + ';')
+          //   .join('&#x200D;'),
+          unicode: hit.unicode,
         });
         this.setState({ emojis: newState });
       });
@@ -51,6 +56,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Let's Learn About Some Emojis Today! 🙂</h1>
         <Form handleChange={this.handleChange} />
         <Emoji emojis={this.state.emojis} />
       </div>

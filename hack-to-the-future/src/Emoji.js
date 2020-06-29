@@ -2,13 +2,20 @@ import React from 'react';
 
 export const Emoji = props => {
   return props.emojis ? (
-    props.emojis.map(emoji => (
-      <div class="row" key={emoji.unicode}>
-        <h4>{emoji.name}</h4>
-        <h5>{emoji.descrip}</h5>
-        <p>{emoji.unicode}</p>
+    <div className="grid">
+      <div className="row">
+        <h4 className="item">Name:</h4>
+        <h4 className="item">Description:</h4>
+        <h4 className="item">Unicode:</h4>
       </div>
-    ))
+      {props.emojis.map(emoji => (
+        <div className="row" key={emoji.unicode}>
+          <p className="item">{emoji.name}</p>
+          <p className="item">{emoji.descrip}</p>
+          <p className="item">{emoji.unicode}</p>
+        </div>
+      ))}
+    </div>
   ) : (
     <div>Search for some emojis!</div>
   );
