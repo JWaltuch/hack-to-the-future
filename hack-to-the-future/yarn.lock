@@ -2,6 +2,96 @@
 # yarn lockfile v1
 
 
+"@algolia/cache-browser-local-storage@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.4.0.tgz#f58055bdf798d7b31b6d5f86e465cb0fc7dd6694"
+  dependencies:
+    "@algolia/cache-common" "4.4.0"
+
+"@algolia/cache-common@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/cache-common/-/cache-common-4.4.0.tgz#bfe84790230f5d2de495238b29e9397c5ed2b26e"
+
+"@algolia/cache-in-memory@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/cache-in-memory/-/cache-in-memory-4.4.0.tgz#54a089094c2afa5b9cacab4b60a5f1ba29013a7c"
+  dependencies:
+    "@algolia/cache-common" "4.4.0"
+
+"@algolia/client-account@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-account/-/client-account-4.4.0.tgz#7dbeff83e1c85d853b3ad224674a924e02b94d1b"
+  dependencies:
+    "@algolia/client-common" "4.4.0"
+    "@algolia/client-search" "4.4.0"
+    "@algolia/transporter" "4.4.0"
+
+"@algolia/client-analytics@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-analytics/-/client-analytics-4.4.0.tgz#50dde68b067c615fc91434c98db9b5ca429be33d"
+  dependencies:
+    "@algolia/client-common" "4.4.0"
+    "@algolia/client-search" "4.4.0"
+    "@algolia/requester-common" "4.4.0"
+    "@algolia/transporter" "4.4.0"
+
+"@algolia/client-common@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-common/-/client-common-4.4.0.tgz#b9fa987bc7a148f9756da59ada51fe2494a4aa9a"
+  dependencies:
+    "@algolia/requester-common" "4.4.0"
+    "@algolia/transporter" "4.4.0"
+
+"@algolia/client-recommendation@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-recommendation/-/client-recommendation-4.4.0.tgz#82410f7a346ed8518b8dcd28bc47571e850ab74f"
+  dependencies:
+    "@algolia/client-common" "4.4.0"
+    "@algolia/requester-common" "4.4.0"
+    "@algolia/transporter" "4.4.0"
+
+"@algolia/client-search@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-search/-/client-search-4.4.0.tgz#c1e107206f3ae719cd3a9877889eea5e5cbcdc62"
+  dependencies:
+    "@algolia/client-common" "4.4.0"
+    "@algolia/requester-common" "4.4.0"
+    "@algolia/transporter" "4.4.0"
+
+"@algolia/logger-common@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/logger-common/-/logger-common-4.4.0.tgz#8115d95d5f6227f0127d33130a9c4622cde64f6f"
+
+"@algolia/logger-console@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/logger-console/-/logger-console-4.4.0.tgz#1e0eaaf0879f152f9a1fa333c4cd8cb55e071552"
+  dependencies:
+    "@algolia/logger-common" "4.4.0"
+
+"@algolia/requester-browser-xhr@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/requester-browser-xhr/-/requester-browser-xhr-4.4.0.tgz#f5877397ed92d2d64d08846ea969aeb559a5efb6"
+  dependencies:
+    "@algolia/requester-common" "4.4.0"
+
+"@algolia/requester-common@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/requester-common/-/requester-common-4.4.0.tgz#0e977939aae32ff81a6d27480a71771a65db6051"
+
+"@algolia/requester-node-http@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/requester-node-http/-/requester-node-http-4.4.0.tgz#6ffba93d54eeadf64cb1be67fae5c4e3f7c8f390"
+  dependencies:
+    "@algolia/requester-common" "4.4.0"
+
+"@algolia/transporter@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@algolia/transporter/-/transporter-4.4.0.tgz#6ec79aac43bc515c8e4f6d6e27dc8d8cd7112f7e"
+  dependencies:
+    "@algolia/cache-common" "4.4.0"
+    "@algolia/logger-common" "4.4.0"
+    "@algolia/requester-common" "4.4.0"
+
 "@babel/code-frame@7.8.3", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -1689,6 +1779,25 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.0, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+algoliasearch@^4.3.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/algoliasearch/-/algoliasearch-4.4.0.tgz#25c356d8bdcf7e3f941633f61e1ac111ddcba404"
+  dependencies:
+    "@algolia/cache-browser-local-storage" "4.4.0"
+    "@algolia/cache-common" "4.4.0"
+    "@algolia/cache-in-memory" "4.4.0"
+    "@algolia/client-account" "4.4.0"
+    "@algolia/client-analytics" "4.4.0"
+    "@algolia/client-common" "4.4.0"
+    "@algolia/client-recommendation" "4.4.0"
+    "@algolia/client-search" "4.4.0"
+    "@algolia/logger-common" "4.4.0"
+    "@algolia/logger-console" "4.4.0"
+    "@algolia/requester-browser-xhr" "4.4.0"
+    "@algolia/requester-common" "4.4.0"
+    "@algolia/requester-node-http" "4.4.0"
+    "@algolia/transporter" "4.4.0"
+
 alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
@@ -3078,7 +3187,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^3.0.0, debug@^3.1.1, debug@^3.2.5:
+debug@^3.1.1, debug@^3.2.5:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   dependencies:
@@ -3685,8 +3794,8 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
 
 eventemitter3@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.0.tgz#d65176163887ee59f386d64c82610b696a4a74eb"
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
 
 events@^3.0.0:
   version "3.1.0"
@@ -4027,10 +4136,8 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 follow-redirects@^1.0.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.10.0.tgz#01f5263aee921c6a54fb91667f08f4155ce169eb"
-  dependencies:
-    debug "^3.0.0"
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
 
 for-in@^0.1.3:
   version "0.1.8"
@@ -4507,8 +4614,8 @@ http-proxy-middleware@0.19.1:
     micromatch "^3.1.10"
 
 http-proxy@^1.17.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.0.tgz#dbe55f63e75a347db7f3d99974f2692a314a6a3a"
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
   dependencies:
     eventemitter3 "^4.0.0"
     follow-redirects "^1.0.0"
