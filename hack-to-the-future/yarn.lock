@@ -2,6 +2,96 @@
 # yarn lockfile v1
 
 
+"@algolia/cache-browser-local-storage@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.13.0.tgz#f8aa4fe31104b19d616ea392f9ed5c2ea847d964"
+  dependencies:
+    "@algolia/cache-common" "4.13.0"
+
+"@algolia/cache-common@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/cache-common/-/cache-common-4.13.0.tgz#27b83fd3939d08d72261b36a07eeafc4cb4d2113"
+
+"@algolia/cache-in-memory@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/cache-in-memory/-/cache-in-memory-4.13.0.tgz#10801a74550cbabb64b59ff08c56bce9c278ff2d"
+  dependencies:
+    "@algolia/cache-common" "4.13.0"
+
+"@algolia/client-account@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-account/-/client-account-4.13.0.tgz#f8646dd40d1e9e3353e10abbd5d6c293ea92a8e2"
+  dependencies:
+    "@algolia/client-common" "4.13.0"
+    "@algolia/client-search" "4.13.0"
+    "@algolia/transporter" "4.13.0"
+
+"@algolia/client-analytics@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-analytics/-/client-analytics-4.13.0.tgz#a00bd02df45d71becb9dd4c5c993d805f2e1786d"
+  dependencies:
+    "@algolia/client-common" "4.13.0"
+    "@algolia/client-search" "4.13.0"
+    "@algolia/requester-common" "4.13.0"
+    "@algolia/transporter" "4.13.0"
+
+"@algolia/client-common@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-common/-/client-common-4.13.0.tgz#8bc373d164dbdcce38b4586912bbe162492bcb86"
+  dependencies:
+    "@algolia/requester-common" "4.13.0"
+    "@algolia/transporter" "4.13.0"
+
+"@algolia/client-personalization@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-personalization/-/client-personalization-4.13.0.tgz#10fb7af356422551f11a67222b39c52306f1512c"
+  dependencies:
+    "@algolia/client-common" "4.13.0"
+    "@algolia/requester-common" "4.13.0"
+    "@algolia/transporter" "4.13.0"
+
+"@algolia/client-search@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/client-search/-/client-search-4.13.0.tgz#2d8ff8e755c4a37ec89968f3f9b358eed005c7f0"
+  dependencies:
+    "@algolia/client-common" "4.13.0"
+    "@algolia/requester-common" "4.13.0"
+    "@algolia/transporter" "4.13.0"
+
+"@algolia/logger-common@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/logger-common/-/logger-common-4.13.0.tgz#be2606e71aae618a1ff1ea9a1b5f5a74284b35a8"
+
+"@algolia/logger-console@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/logger-console/-/logger-console-4.13.0.tgz#f28028a760e3d9191e28a10b12925e48f6c9afde"
+  dependencies:
+    "@algolia/logger-common" "4.13.0"
+
+"@algolia/requester-browser-xhr@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/requester-browser-xhr/-/requester-browser-xhr-4.13.0.tgz#e2483f4e8d7f09e27cd0daf6c77711d15c5a919f"
+  dependencies:
+    "@algolia/requester-common" "4.13.0"
+
+"@algolia/requester-common@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/requester-common/-/requester-common-4.13.0.tgz#47fb3464cfb26b55ba43676d13f295d812830596"
+
+"@algolia/requester-node-http@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/requester-node-http/-/requester-node-http-4.13.0.tgz#7d981bbd31492f51dd11820a665f9d8906793c37"
+  dependencies:
+    "@algolia/requester-common" "4.13.0"
+
+"@algolia/transporter@4.13.0":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@algolia/transporter/-/transporter-4.13.0.tgz#f6379e5329efa2127da68c914d1141f5f21dbd07"
+  dependencies:
+    "@algolia/cache-common" "4.13.0"
+    "@algolia/logger-common" "4.13.0"
+    "@algolia/requester-common" "4.13.0"
+
 "@babel/code-frame@7.8.3", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -1689,6 +1779,25 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.0, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+algoliasearch@^4.3.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/algoliasearch/-/algoliasearch-4.13.0.tgz#e36611fda82b1fc548c156ae7929a7f486e4b663"
+  dependencies:
+    "@algolia/cache-browser-local-storage" "4.13.0"
+    "@algolia/cache-common" "4.13.0"
+    "@algolia/cache-in-memory" "4.13.0"
+    "@algolia/client-account" "4.13.0"
+    "@algolia/client-analytics" "4.13.0"
+    "@algolia/client-common" "4.13.0"
+    "@algolia/client-personalization" "4.13.0"
+    "@algolia/client-search" "4.13.0"
+    "@algolia/logger-common" "4.13.0"
+    "@algolia/logger-console" "4.13.0"
+    "@algolia/requester-browser-xhr" "4.13.0"
+    "@algolia/requester-common" "4.13.0"
+    "@algolia/requester-node-http" "4.13.0"
+    "@algolia/transporter" "4.13.0"
+
 alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
@@ -1899,8 +2008,8 @@ async-limiter@~1.0.0:
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
 
 async@^2.6.1, async@^2.6.2:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.6.4.tgz#706b7ff6084664cd7eae713f6f965433b5504221"
   dependencies:
     lodash "^4.17.14"
 
@@ -5721,8 +5830,8 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
 "lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.5:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
 
 loglevel@^1.6.6:
   version "1.6.7"
